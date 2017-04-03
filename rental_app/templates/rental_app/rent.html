@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="{% 'rent.css' %}" rel="stylesheet">
+        <link href="{% static 'rent.css' %}" rel="stylesheet">
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <title>Rental Page</title>
     </head>
@@ -22,9 +22,9 @@
         <div class="container-fluid padd_butnotop">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 no_padd">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <!--<img src="{{ item.image_url }}">-->
-                    <b>{{ item.name }}</b>
-                    Price: ${{ item.price }}
+                    <img src="{{ item.image_url }}">
+                    <div><b>{{ item.name }}</b></div>
+                    <div>Price: ${{ item.price }}</div>
                     <div id="num1">Quantity: {{ item.num_in_stock }}</div>
                     <button onclick="price_total.addto(1)">+</button>
                     <button onclick="price_total.removefrom(1)">-</button>

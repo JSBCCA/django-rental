@@ -7,7 +7,7 @@ def about(request):
 
 def rent(request):
     items = Item.objects.all()
-    return render(request, 'rental_app/rent.html', {})
+    return render(request, 'rental_app/rent.html', {"items":items})
 
 def rented(request, id):
     item = Item.objects.get(pk=id)
