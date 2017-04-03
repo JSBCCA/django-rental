@@ -1,0 +1,85 @@
+/** {
+    outline-color: black;
+    outline-width: thin;
+    outline-style: solid;
+}*/
+
+#leftdownpadd {
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.downpadd {
+    padding-bottom: 2%;
+}
+
+.bigger {
+    font-size: 150%;
+}
+
+.biggest {
+    font-size: 250%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.no_marg {
+    margin: 0;
+}
+
+.padd {
+    padding: 1%;
+}
+
+.no_padd {
+    padding: 0;
+}
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+.navbar-default {
+  background-color:#ef476f;
+  background-image: none;
+  background-repeat: no-repeat;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  color: white;
+ }
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 200%;
+    margin: 5%;
+}
+
+.navbar-default .navbar-text {
+    color: white;
+    font-size: 150%;
+}
+
+.navbar-nav {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.navbar-header {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+@media (min-width: 768px)
+navbar.less:115
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 1%;
+    margin-left: 1%;
+}

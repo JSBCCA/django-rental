@@ -1,0 +1,113 @@
+/** {
+    outline-color: black;
+    outline-width: thin;
+    outline-style: solid;
+}*/
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+.navbar-default {
+  background-color:#ef476f;
+  background-image: none;
+  background-repeat: no-repeat;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  color: white;
+ }
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 200%;
+    margin: 5%;
+}
+
+.navbar-default .navbar-text {
+    color: white;
+    font-size: 150%;
+}
+
+.navbar-nav {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.navbar-header {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+@media (min-width: 768px)
+navbar.less:115
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.pict {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    padding-bottom: 100%;
+    outline-color: black;
+    outline-width: thin;
+    outline-style: solid;
+}
+
+.pict_div {
+    padding: 2%;
+    outline-color: black;
+    outline-width: thin;
+    outline-style: solid;
+    background-color: lightgray;
+}
+
+.padd {
+    padding: 1%;
+}
+
+.no_padd {
+    padding: 0;
+}
+
+padd_butnotop {
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.top_marg {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+td, th {
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    text-align: left;
+    padding: 8px;
+}
+
+/*Background Images*/
+.item1 {background-image: url("images/mario_defect.jpg");}
+.item2 {background-image: url("images/zelda_nes.jpg");}
+.item3 {background-image: url("images/halo.jpg");}
+.item4 {background-image: url("images/punch_out.jpg");}
+.item5 {background-image: url("images/elder_scroll.jpg");}
+.item6 {background-image: url("images/portal_gun.jpg");}
+.item7 {background-image: url("images/kingdom_key.jpg");}
+.item8 {background-image: url("images/jigglypuff.jpg");}
