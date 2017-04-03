@@ -17,17 +17,27 @@
                 </ul>
             </div>
         </nav>
+        {% for item in items %}
         <div class="container-fluid padd_butnotop">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 no_padd">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Mario Figure Defect</b>
+                    <b>{{ item.name }}</b>
                     <center><div class="pict item1"></div></center>
-                    Price: $150.00
-                    <div id="num1">Quantity: 0</div>
+                    Price: ${{ item.price }}
+                    <div id="num1">Quantity: {{ item.num_in_stock }}</div>
                     <button onclick="price_total.addto(1)">+</button>
                     <button onclick="price_total.removefrom(1)">-</button>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+
+
+
+                <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
                     <b>Rare Zelda NES</b>
                     <center><div class="pict item2"></div></center>
                     Price: $210.00
@@ -82,9 +92,7 @@
                     <div id="num8">Quantity: 0</div>
                     <button onclick="price_total.addto(8)">+</button>
                     <button onclick="price_total.removefrom(8)">-</button>
-                </div>
-            </div>
-        </div>
+                </div>-->
         <script src="jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="rent.js"></script>
