@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'rental_app.apps.RentalAppConfig',
+    'rental_app.apps.RentalAppConfig',
     
 ]
 
