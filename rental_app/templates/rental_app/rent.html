@@ -2,7 +2,8 @@
 <html>
     <head>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="rent.css" rel="stylesheet">
+        <link href="{% 'rent.css' %}" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <title>Rental Page</title>
     </head>
     <body>
@@ -21,8 +22,8 @@
         <div class="container-fluid padd_butnotop">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 no_padd">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
+                    <!--<img src="{{ item.image_url }}">-->
                     <b>{{ item.name }}</b>
-                    <center><div class="pict item1"></div></center>
                     Price: ${{ item.price }}
                     <div id="num1">Quantity: {{ item.num_in_stock }}</div>
                     <button onclick="price_total.addto(1)">+</button>
@@ -31,70 +32,5 @@
             </div>
         </div>
         {% endfor %}
-
-
-
-
-
-
-                <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Rare Zelda NES</b>
-                    <center><div class="pict item2"></div></center>
-                    Price: $210.00
-                    <div id="num2">Quantity: 0</div>
-                    <button onclick="price_total.addto(2)">+</button>
-                    <button onclick="price_total.removefrom(2)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Halo Helmet</b>
-                    <center><div class="pict item3"></div></center>
-                    Price: $260.00
-                    <div id="num3">Quantity: 0</div>
-                    <button onclick="price_total.addto(3)">+</button>
-                    <button onclick="price_total.removefrom(3)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Punch Out! Gloves</b>
-                    <center><div class="pict item4"></div></center>
-                    Price: $140.00
-                    <div id="num4">Quantity: 0</div>
-                    <button onclick="price_total.addto(4)">+</button>
-                    <button onclick="price_total.removefrom(4)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Bill Nye Elder Scroll</b>
-                    <center><div class="pict item5"></div></center>
-                    Price: $400.00
-                    <div id="num5">Quantity: 0</div>
-                    <button onclick="price_total.addto(5)">+</button>
-                    <button onclick="price_total.removefrom(5)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 span3 pict_div">
-                    <b>Portal Gun</b>
-                    <center><div class="pict item6"></div></center>
-                    Price: $200.00
-                    <div id="num6">Quantity: 0</div>
-                    <button onclick="price_total.addto(6)">+</button>
-                    <button onclick="price_total.removefrom(6)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 span3 pict_div">
-                    <b>Kingdom Key</b>
-                    <center><div class="pict item7"></div></center>
-                    Price: $250.00
-                    <div id="num7">Quantity: 0</div>
-                    <button onclick="price_total.addto(7)">+</button>
-                    <button onclick="price_total.removefrom(7)">-</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <b>Jigglypuff Plush</b>
-                    <center><div class="pict item8"></div></center>
-                    Price: $30.00
-                    <div id="num8">Quantity: 0</div>
-                    <button onclick="price_total.addto(8)">+</button>
-                    <button onclick="price_total.removefrom(8)">-</button>
-                </div>-->
-        <script src="jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="rent.js"></script>
      </body>
 </html>
