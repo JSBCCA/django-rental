@@ -6,4 +6,6 @@ app_name = 'django_rental'
 urlpatterns = [
     url(r'^about/$', views.about, name='about'),
     url(r'^rent/$', views.rent, name='rent'),
+    url(r'^rented/(?P<id>[0-9]+)/$', views.rented, name='rented'),
+    url(r'^returned/(?P<id>[0-9]+)/$', views.returned, name='returned'),
 ]

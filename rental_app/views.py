@@ -11,6 +11,12 @@ def rent(request):
 
 def rented(request, id):
     item = Item.objects.get(pk=id)
-    item.quantity -= 1
+    item.num_in_stock -= 1
     item.save()
-    return redirect('django_page:rent')
+    return redirect('django_rental:rent')
+
+def returned(request, id):
+    item = Item.objects.get(pk=id)
+    item.num_in_stock += 1
+    item.save()
+    return redirect('django_rental:rent')
