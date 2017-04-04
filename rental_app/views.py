@@ -20,7 +20,8 @@ def rented(request, id):
 
 def returned(request, id):
     item = Item.objects.get(pk=id)
-    item.num_in_stock += 1
+    if item.num_in_stock < item.max_stock:
+        item.num_in_stock += 1
     messages.success(request, "You have returned " + item.name + "!")
     item.save()
     return redirect('django_rental:rent')

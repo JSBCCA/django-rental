@@ -30,11 +30,11 @@
                     <div><b>{{ item.name }}</b></div>
                     <div>Price: ${{ item.price }}</div>
                     <div id="num1">Quantity: {{ item.num_in_stock }}</div>
-                    <form action="{% url 'django_rental:rented' id=item.id %}">
-                        <input value="Rent" type="submit"></input>
-                    </form>
                     <form action="{% url 'django_rental:returned' id=item.id %}">
                         <input value="Return" type="submit"></input>
+                    </form>
+                    <form action="{% url 'django_rental:rented' id=item.id %}">
+                        <input value="Rent" type="submit"></input>
                     </form>
                 </div>
             {% endfor %}
