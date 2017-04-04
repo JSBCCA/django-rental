@@ -26,14 +26,14 @@
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 no_padd">
                 {% for item in items %}
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pict_div">
-                    <img src="../static/images/{{ item.image_url }}">
+                    <img src="../static/images/{{ item.image_url }}" height="30%" width="100%">
                     <div><b>{{ item.name }}</b></div>
                     <div>Price: ${{ item.price }}</div>
                     <div id="num1">Quantity: {{ item.num_in_stock }}</div>
-                    <form action="{% url 'django_rental:rented' id=item.id %}">
+                    <form action="{% url 'django_rental:rented' id=item.id %}" style="display:inline!important;">
                         <input value="Rent it" type="submit"></input>
                     </form>
-                    <form action="{% url 'django_rental:returned' id=item.id %}">
+                    <form action="{% url 'django_rental:returned' id=item.id %}" style="display:inline!important;">
                         <input value="Return" type="submit"></input>
                     </form>
                 </div>
