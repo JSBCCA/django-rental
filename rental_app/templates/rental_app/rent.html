@@ -19,6 +19,9 @@
                 </ul>
             </div>
         </nav>
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}}">{{ message }}</div>
+        {% endfor %}
         <div class="container-fluid padd_butnotop">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 no_padd">
                 {% for item in items %}
