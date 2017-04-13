@@ -1,7 +1,7 @@
 from django.db import models
 
-# Create your models here.
 class Item(models.Model):
+    # These are each of the attributes the item will have.
     name = models.CharField(max_length=200)
     image_url = models.CharField(max_length=200)
     price = models.IntegerField(max_length=200)

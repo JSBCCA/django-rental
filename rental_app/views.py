@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Item
 from django.contrib import messages
 
-# Create your views here.
+# Each of the views for the page.
 def about(request):
     return render(request, 'rental_app/about.html', {})
 

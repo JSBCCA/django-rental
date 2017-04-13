@@ -3,6 +3,7 @@ from . import views
 
 app_name = 'django_rental'
 
+# Each of the urls for the page.
 urlpatterns = [
     url(r'^about/$', views.about, name='about'),
     url(r'^rent/$', views.rent, name='rent'),
